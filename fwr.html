@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Login/Signup Modal Form Design</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="loginassets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="loginassets/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+	
+	
+	
+
+  </head>
+  <?php
+  session_start();
+
+	if(isset($_SESSION['username']))
+	{
+		$userName = $_SESSION['username'];	
+	}
+  require_once("login/connect.php");
+  ?>
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial;
+}
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.header {
+  overflow: hidden;
+  background-color: white;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: white;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+</style>
+<!--dropdown-->
+<style>
+.dropbtn {
+    background-color: #0099ff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	border-radius : 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: blue;
+}
+</style>
+  <body>
+  
+  
+  
+  <div class="w3-container w3-blue">
+  <center><h1>FULL WAVE RECTIFIER</h1></center>
+  </div>
+  <table align="center"><tr><td>
+ <br>
+ <div>
+<applet code=Circuit.java  archive=circuit.jar width=1000 height=550>
+Sorry, you need a Java-enabled browser to see the simulation.
+<div>
+<param name=pause value=20>
+<param name=startCircuit value="fullrect.txt">
+<param name=startLabel   value="ohms">
+<param name=useFrame     value="false">
+</div>
+</div>
+</applet>
+
+
+</td><td width="20">&nbsp;</td><td valign="top">
+    
+<script type="text/javascript">
+</script>
+    </td>
+    </tr></table>
+	</tr></table><h1><u><center><b>FULL Wave Rectifier</h1></u></b><br><br>
+	<h4>Full Wave Rectifier Circuit<br><br>
+	 <img src=hwr.gif height=300 width=700><br><br>
+full wave rectifier<br><br>
+
+ 
+The full wave rectifier circuit consists of two power diodes connected to a single load resistance (RL) with each diode taking it in turn to supply current to the load. When point A of the transformer is positive with respect to point C, diode D1 conducts in the forward direction as indicated by the arrows.<br><br>
+
+When point B is positive (in the negative half of the cycle) with respect to point C, diode D2 conducts in the forward direction and the current flowing through resistor R is in the same direction for both half-cycles. As the output voltage across the resistor R is the phasor sum of the two waveforms combined, this type of full wave rectifier circuit is also known as a “bi-phase” circuit.<br><br>
+
+The Full Wave Bridge Rectifier<br><br>
+Another type of circuit that produces the same output waveform as the full wave rectifier circuit above, is that of the Full Wave Bridge Rectifier. This type of single phase rectifier uses four individual rectifying diodes connected in a closed loop “bridge” configuration to produce the desired output.<br><br>
+
+The main advantage of this bridge circuit is that it does not require a special centre tapped transformer, thereby reducing its size and cost. The single secondary winding is connected to one side of the diode bridge network and the load to the other side as shown below.<br><br>
+
+The Diode Bridge Rectifier<br><br>
+ <img src=hwr1.gif height=300 width=700><br><br>
+
+
+ 
+The four diodes labelled D1 to D4 are arranged in “series pairs” with only two diodes conducting current during each half cycle. During the positive half cycle of the supply, diodes D1 and D2 conduct in series while diodes D3 and D4 are reverse biased and the current flows through the load as shown below.<br><br>
+
+The Positive Half-cycle<br><br>
+ <img src=hwr2.gif height=300 width=700><br><br>
+
+
+ 
+During the negative half cycle of the supply, diodes D3 and D4 conduct in series, but diodes D1 and D2 switch “OFF” as they are now reverse biased. The current flowing through the load is the same direction as before.<br><br>
+
+The Negative Half-cycle<br><br>
+ <img src=hwr3.gif height=300 width=700><br><br>
+
+
+ 
+As the current flowing through the load is unidirectional, so the voltage developed across the load is also unidirectional the same as for the previous two diode full-wave rectifier, therefore the average DC voltage across the load is 0.637Vmax.<br><br>
+
+bridge rectifier<br><br>
+
+
+However in reality, during each half cycle the current flows through two diodes instead of just one so the amplitude of the output voltage is two voltage drops ( 2*0.7 = 1.4V ) less than the input VMAX amplitude. The ripple frequency is now twice the supply frequency (e.g. 100Hz for a 50Hz supply or 120Hz for a 60Hz supply.)<br><br>
+
+Although we can use four individual power diodes to make a full wave bridge rectifier, pre-made bridge rectifier components are available “off-the-shelf” in a range of different voltage and current sizes that can be soldered directly into a PCB circuit board or be connected by spade connectors.<br><br>

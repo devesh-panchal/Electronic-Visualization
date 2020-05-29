@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Login/Signup Modal Form Design</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="loginassets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="loginassets/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+	
+	
+	
+
+  </head>
+  <?php
+  session_start();
+
+	if(isset($_SESSION['username']))
+	{
+		$userName = $_SESSION['username'];	
+	}
+  require_once("login/connect.php");
+  ?>
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial;
+}
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.header {
+  overflow: hidden;
+  background-color: white;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: white;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+</style>
+<!--dropdown-->
+<style>
+.dropbtn {
+    background-color: #0099ff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	border-radius : 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: blue;
+}
+</style>
+  <body>
+  
+  
+  
+  <div class="w3-container w3-blue">
+  <center><h1>ZENER DIODE I/V CHARACTERISTICS</h1></center>
+  </div>
+  <table align="center"><tr><td>
+ <br>
+ <div>
+<applet code=Circuit.java  archive=circuit.jar width=1000 height=550>
+Sorry, you need a Java-enabled browser to see the simulation.
+<div>
+<param name=pause value=20>
+<param name=startCircuit value="zeneriv.txt">
+<param name=startLabel   value="ohms">
+<param name=useFrame     value="false">
+</div>
+</div>
+</applet>
+
+
+</td><td width="20">&nbsp;</td><td valign="top">
+    
+<script type="text/javascript">
+</script>
+    </td>
+    </tr></table>
+	</tr></table><h1><u><center><b>Zener Diode IV Characteristics</h1></u></b><br><br>
+	<h3>A zener diode is a special type of device designed to operate in the zener breakdown region. Zener diodes acts like normal p-n junction diodes under forward biased condition. When forward biased voltage is applied to the zener diode it allows  large amount of electric current and blocks only a small amount of electric current.<br><br>
+
+Zener diode is heavily doped than the normal p-n junction diode. Hence, it has very thin depletion region. Therefore, zener diodes allow more electric current than the normal p-n junction diodes.<br><br>
+
+Zener diode allows electric current in forward direction like a normal diode but also allows electric current in the reverse direction if the applied reverse voltage is greater than the zener voltage. Zener diode is always connected in reverse direction because it is specifically designed to work in reverse direction.<br><br>
+Breakdown in zener diode<br><br>
+There are two types of reverse breakdown regions in a zener diode: avalanche breakdown and zener breakdown.<br><br>
+
+Avalanche breakdown<br><br>
+
+The avalanche breakdown occurs in both normal diodes and zener diodes at high reverse voltage. When high reverse voltage is applied to the p-n junction diode, the free electrons (minority carriers) gains large amount of energy and accelerated to greater velocities. <br><br>
+<img src=zen.png height=300 width=500><br><br>
+
+The avalanche breakdown occurs in both normal diodes and zener diodes at high reverse voltage. <br><br>
+
+The free electrons moving at high speed will collides with the atoms and knock off more electrons. These electrons are again accelerated and collide with other atoms. Because of this continuous collision with the atoms, a large number of free electrons are generated. As a result, electric current in the diode increases rapidly. This sudden increase in electric current may permanently destroys the normal diode. However, avalanche diodes may not be destroyed because they are carefully designed to operate in avalanche breakdown region. Avalanche breakdown occurs in zener diodes with zener voltage (Vz) greater than 6V.<br><br>
+
+
+Zener breakdown<br><br>
+
+The zener breakdown occurs in heavily doped p-n junction diodes because of their narrow depletion region. When reverse biased voltage applied to the diode is increased, the narrow depletion region generates strong electric field.<br><br>
+<img src=zen1.png height=300 width=500><br><br>
+ 
+
+The zener breakdown occurs in heavily doped p-n junction diodes because of their narrow depletion region.
+When reverse biased voltage applied to the diode reaches close to zener voltage, the electric field in the depletion region is strong enough to pull electrons from their valence band. The valence electrons which gains sufficient energy from the strong electric field of depletion region will breaks bonding with the parent atom. The valance electrons which break bonding with parent atom will become free electrons. This free electrons carry electric current from one place to another place. At zener breakdown region, a small increase in voltage will rapidly increases the electric current. <br><br>
+
+
+Zener breakdown occurs at low reverse voltage whereas avalanche breakdown occurs at high reverse voltage<br><br>
+.
+Zener breakdown occurs in zener diodes because they have very thin depletion region. <br><br>
+
+Breakdown region is the normal operating region for a zener diode.<br><br>
+
+Zener breakdown occurs in zener diodes with zener voltage (Vz) less than 6V.<br><br>
+Symbol of zener diode<br><br>
+<img src=zen2.png height=300 width=500><br><br>
+The symbol of zener diode is shown in below figure. Zener diode consists of two terminals: cathode and anode.<br><br> 
+
+ 
+In zener diode, electric current flows from both anode to cathode and cathode to anode.<br><br>
+
+The symbol of zener diode is similar to the normal p-n junction diode, but with bend edges on the vertical bar.
+
+VI characteristics of zener diode<br><br>
+The VI characteristics of a zener diode is shown in the below figure. When forward biased voltage is applied to the zener diode, it works like a normal diode. However, when reverse biased voltage is applied to the zener diode, it works in different manner.<br><br>
+
+The VI characteristics of a zener diode is shown in the below figure.<br><br>
+<img src=zen3.png height=300 width=500><br><br>
+When reverse biased voltage is applied to a zener diode, it allows only a small amount of leakage current until the voltage is less than zener voltage. When reverse biased voltage applied to the zener diode reaches zener voltage, it starts allowing large amount of electric current. At this point, a small increase in reverse voltage will rapidly increases the electric current. Because of this sudden rise in electric current, breakdown occurs called zener breakdown. However, zener diode exhibits a controlled breakdown that does damage the device<br><br>
+
+The zener breakdown voltage of the zener diode is depends on the amount of doping applied. If the diode is heavily doped, zener breakdown occurs at low reverse voltages. On the other hand, if the diode is lightly doped, the zener breakdown occurs at high reverse voltages. Zener diodes are available with zener voltages in the range of 1.8V to 400V.<br><br>

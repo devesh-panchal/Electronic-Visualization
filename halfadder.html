@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Login/Signup Modal Form Design</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="loginassets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="loginassets/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  </head>
+  <?php
+  session_start();
+
+	if(isset($_SESSION['username']))
+	{
+		$userName = $_SESSION['username'];	
+	}
+  require_once("login/connect.php");
+  ?>
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial;
+}
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.header {
+  overflow: hidden;
+  background-color: white;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: white;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+</style>
+<!--dropdown-->
+<style>
+.dropbtn {
+    background-color: #0099ff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	border-radius : 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: blue;
+}
+</style>
+</style>
+  <body>
+  
+  
+  
+  <div class="w3-container w3-blue">
+  <center><h1>HALF ADDER</h1></center>
+  </div>
+  <br>
+	
+  <div>
+  <table align="center"><tr><td>
+<applet code=Circuit.java archive=circuit.jar width=1000 height=450>
+Sorry, you need a Java-enabled browser to see the simulation.
+<param name=pause value=20>
+<param name=startCircuit value="halfadd.txt">
+<param name=startLabel   value="Diode">
+<param name=useFrame     value="false">
+
+</applet>
+</td><td width="20">&nbsp;</td><td valign="top">
+    
+<script type="text/javascript">
+</script>
+    </td>
+    </tr></table>
+	</div>
+	</tr></table><h1><u><center><b>Half Adder</h1></u></b><br><br>
+	
+<h3>An adder is a digital circuit that performs addition of numbers. The half adder adds two binary digits called as augend and addend and produces two outputs as sum and carry; XOR is applied to both inputs to produce sum and AND gate is applied to both inputs to produce carry. The full adder adds 3 one bit numbers, where two can be referred to as operands and one can be referred to as bit carried in. And produces 2-bit output, and these can be referred to as output carry and sum.
+<br><br>
+Half Adder<br><br>
+By using half adder, you can design simple addition with the help of logic gates.<br><br>
+
+Let’s see an addition of single bits.<br><br>
+<img src=ha1.jpg height=200 width=300><br><br>
+Half Adder<br><br>
+0+0 = 0<br>
+0+1 = 1<br>
+1+0 = 1<br>
+1+1 = 10<br>
+<br><br>
+These are the least possible single-bit combinations. But the result for 1+1 is 10, the sum result must be re-written as a 2-bit output. Thus, the equations can be written as
+0+0 = 00<br>
+0+1 = 01<br>
+1+0 = 01<br>
+1+1 = 10<br>
+<br><br>
+The output ‘1’of ‘10’ is carry-out. ‘SUM’ is the normal output and ‘CARRY’ is the carry-out.
+<br><br>
+Half Adder Truth Table<br><br>
+
+<img src=ha2.jpg height=200 width=300><br><br>
+Now it has been cleared that  1-bit adder can be easily implemented with the help of the XOR Gate for the output ‘SUM’ and an AND Gate for the ‘Carry’. When we need to add, two 8-bit bytes together, we can be done with the help of a full-adder logic. The half-adder is useful when you want to  add one binary digit quantities. A way to develop a two-binary digit adders would be to make a truth table and reduce it.  When you want to make a three binary digit adder, do it again. When you decide to make a four digit adder, do it again. The circuits would be fast, but development time is slow.
+<br><br>
+Half Adder Logic Circuit<br><br>
+<img src=ha3.jpg height=200 width=300><br><br>
+
+The simplest expression uses the exclusive OR function: Sum=AÅB. An equivalent expression in terms of the basic AND, OR, and NOT is: SUM=A|.B+A.B’
+	
+	

@@ -1,0 +1,60 @@
+### setuplist.txt first line must be a comment
++BasicCircuits
+ohms.txt Ohm's Law
+resistors.txt Resistors
+cap.txt Capacitor
+induct.txt Inductor
+-
++AC-Circuits
+capac.txt Capacitor
+inductac.txt Inductor
+-
++Transformers
+transformer.txt Transformer
+-
++Rectifier
+rectify.txt Half-Wave Rectifier
+fullrect.txt Full-Wave Rectifier
+-
++Diodes
+diodevar.txt Diode
+diodecurve.txt Diode I/V Char
+diodelimit.txt Diode Limiter
++Zener Diodes
+zeneriv.txt I/V Char
+-
+-
++Op-Amps
+opamp.txt Op-Amp
+opampfeedback.txt Op-Amp Feedback
+-
++Transistors
+npn.txt NPN Transistor
+pnp.txt PNP Transistor
+transswitch.txt Switch
+currentsrc.txt Current Source
+-
++MOSFETs
+nmosfet.txt n-MOSFET
+pmosfet.txt p-MOSFET
+mosswitch.txt Switch
+moscurrentsrc.txt Current Source
+-
++Combinational Logic
+halfadd.txt Half Adder
+fulladd.txt Full Adder
+decoder.txt 1-of-4 Decoder
+-
++Flip-Flops
+nandff.txt SR Flip-Flop
+clockedsrff.txt Clocked SR Flip-Flop
+edgedff.txt Edge-Triggered D Flip-Flop
+-
++LogicGates
+and.txt And
+not.txt Not
+or.txt Or
+nand.txt Nand
+nor.txt Nor
+-
+blank.txt Blank Circuit

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Login/Signup Modal Form Design</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="loginassets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="loginassets/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  </head>
+  <?php
+  session_start();
+
+	if(isset($_SESSION['username']))
+	{
+		$userName = $_SESSION['username'];	
+	}
+  require_once("login/connect.php");
+  ?>
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial;
+}
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.header {
+  overflow: hidden;
+  background-color: white;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: white;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+</style>
+<!--dropdown-->
+<style>
+.dropbtn {
+    background-color: #0099ff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	border-radius : 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: blue;
+}
+</style>
+</style>
+  <body>
+  
+  
+  
+  <div class="w3-container w3-blue">
+  <center><h1>SR FLIPFLOP</h1></center>
+  </div>
+  
+  
+  <table align="center"><tr><td>
+ <br>
+ <div>
+<applet code=Circuit.java  archive=circuit.jar width=1000 height=550>
+Sorry, you need a Java-enabled browser to see the simulation.
+<div>
+<param name=pause value=20>
+<param name=startCircuit value="nandff.txt">
+<param name=startLabel   value="nandff">
+<param name=useFrame     value="false">
+</div>
+</div>
+</applet>
+
+
+</td><td width="20">&nbsp;</td><td valign="top">
+    
+<script type="text/javascript">
+</script>
+    </td>
+    </tr></table>
+	<h1><u><center><b>SR FlipFlop</h1></center></b><br><br></u>
+	
+	<h3>SR Flip-Flop<br><br>
+The SR flip-flop, also known as a SR Latch, can be considered as one of the most basic sequential logic circuit possible. This simple flip-flop is basically a one-bit memory bistable device that has two inputs, one which will “SET” the device (meaning the output = “1”), and is labelled S and one which will “RESET” the device (meaning the output = “0”), labelled R.
+<br><br>
+Then the SR description stands for “Set-Reset”. The reset input resets the flip-flop back to its original state with an output Q that will be either at a logic level “1” or logic “0” depending upon this set/reset condition.
+<br><br>
+A basic NAND gate SR flip-flop circuit provides feedback from both of its outputs back to its opposing inputs and is commonly used in memory circuits to store a single data bit. Then the SR flip-flop actually has three inputs, Set, Reset and its current output Q relating to it’s current state or history. The term “Flip-flop” relates to the actual operation of the device, as it can be “flipped” into one logic Set state or “flopped” back into the opposing logic Reset state.
+<br><br>
+The NAND Gate SR Flip-Flop<br><br>
+The simplest way to make any basic single bit set-reset SR flip-flop is to connect together a pair of cross-coupled 2-input NAND gates as shown, to form a Set-Reset Bistable also known as an active LOW SR NAND Gate Latch, so that there is feedback from each output to one of the other NAND gate inputs. This device consists of two inputs, one called the Set, S and the other called the Reset, R with two corresponding outputs Q and its inverse or complement Q (not-Q) as shown below.
+<br><br>
+The Basic SR Flip-flop<br><br>
+<img src=sr1.gif height=300 width=500><br><br>
+sr flip flop
+
+The Set State<br><br>
+Consider the circuit shown above. If the input R is at logic level “0” (R = 0) and input S is at logic level “1” (S = 1), the NAND gate Y  has at least one of its inputs at logic “0” therefore, its output Q must be at a logic level “1” (NAND Gate principles). Output Q is also fed back to input “A” and so both inputs to NAND gate X are at logic level “1”, and therefore its output Q must be at logic level “0”.
+<br><br>
+Again NAND gate principals. If the reset input R changes state, and goes HIGH to logic “1” with S remaining HIGH also at logic level “1”, NAND gate Y inputs are now R = “1” and B = “0”. Since one of its inputs is still at logic level “0” the output at Q still remains HIGH at logic level “1” and there is no change of state. Therefore, the flip-flop circuit is said to be “Latched” or “Set” with Q = “1” and Q = “0”.
+<br><br>
+Reset State<br><br>
+In this second stable state, Q is at logic level “0”, (not Q = “0”) its inverse output at Q is at logic level “1”, (Q = “1”), and is given by R = “1” and S = “0”. As gate X has one of its inputs at logic “0” its output Q must equal logic level “1” (again NAND gate principles). Output Q is fed back to input “B”, so both inputs to NAND gate Y are at logic “1”, therefore, Q = “0”.
+<br><br>
+If the set input, S now changes state to logic “1” with input R remaining at logic “1”, output Q still remains LOW at logic level “0” and there is no change of state. Therefore, the flip-flop circuits “Reset” state has also been latched and we can define this “set/reset” action in the following truth table.
+<br><br>
+Truth Table for this Set-Reset Function
+<br><br>
+<img src=sr4.jpg height=300 width=500><br><br>
+It can be seen that when both inputs S = “1” and R = “1” the outputs Q and Q can be at either logic level “1” or “0”, depending upon the state of the inputs S or R BEFORE this input condition existed. Therefore the condition of S = R = “1” does not change the state of the outputs Q and Q.
+<br><br>
+However, the input state of S = “0” and R = “0” is an undesirable or invalid condition and must be avoided. The condition of S = R = “0” causes both outputs Q and Q to be HIGH together at logic level “1” when we would normally want Q to be the inverse of Q. The result is that the flip-flop looses control of Q and Q, and if the two inputs are now switched “HIGH” again after this condition to logic “1”, the flip-flop becomes unstable and switches to an unknown data state based upon the unbalance as shown in the following switching diagram.
+<br><br>
+S-R Flip-flop Switching Diagram<br><br>
+<img src=sr2.gif height=300 width=500>
+sr flip flop switching diagram
+<br><br>
+This unbalance can cause one of the outputs to switch faster than the other resulting in the flip-flop switching to one state or the other which may not be the required state and data corruption will exist. This unstable condition is generally known as its Meta-stable state.
+<br><br>
+Then, a simple NAND gate SR flip-flop or NAND gate SR latch can be set by applying a logic “0”, (LOW) condition to its Set input and reset again by then applying a logic “0” to its Reset input. The SR flip-flop is said to be in an “invalid” condition (Meta-stable) if both the set and reset inputs are activated simultaneously.
+<br><br>
+As we have seen above, the basic NAND gate SR flip-flop requires logic “0” inputs to flip or change state from Q to Q and vice versa. We can however, change this basic flip-flop circuit to one that changes state by the application of positive going input signals with the addition of two extra NAND gates connected as inverters to the S and R inputs as shown.
+<br><br>
+Positive NAND Gate SR Flip-flop<br><br>
+<img src=sr3.gif height=300 width=500>
+nand sr flip flop
+<br><br>
+As well as using NAND gates, it is also possible to construct simple one-bit SR Flip-flops using two cross-coupled NOR gates connected in the same configuration. The circuit will work in a similar way to the NAND gate circuit above, except that the inputs are active HIGH and the invalid condition exists when both its inputs are at logic level “1”,

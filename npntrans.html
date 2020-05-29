@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Login/Signup Modal Form Design</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="loginassets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="loginassets/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+	
+	
+	
+
+  </head>
+  <?php
+  session_start();
+
+	if(isset($_SESSION['username']))
+	{
+		$userName = $_SESSION['username'];	
+	}
+  require_once("login/connect.php");
+  ?>
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial;
+}
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.header {
+  overflow: hidden;
+  background-color: white;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: white;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+</style>
+<!--dropdown-->
+<style>
+.dropbtn {
+    background-color: #0099ff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	border-radius : 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: blue;
+}
+</style>
+  <body>
+  
+  
+  
+  <div class="w3-container w3-blue">
+  <center><h1>NPN TRANSISTOR</h1></center>
+  </div>
+  <table align="center"><tr><td>
+ <br>
+ <div>
+<applet code=Circuit.java  archive=circuit.jar width=1000 height=550>
+Sorry, you need a Java-enabled browser to see the simulation.
+<div>
+<param name=pause value=20>
+<param name=startCircuit value="npn.txt">
+<param name=startLabel   value="ohms">
+<param name=useFrame     value="false">
+</div>
+</div>
+</applet>
+
+
+</td><td width="20">&nbsp;</td><td valign="top">
+    
+<script type="text/javascript">
+</script>
+    </td>
+    </tr></table>
+	</tr></table><h1><u><center><b>NPN Transistor</h1></u></b><br><br>
+	
+	<h3>A Bipolar NPN Transistor Configuration<br><br>
+bipolar npn transistor configuration
+
+(Note: Arrow defines the emitter and conventional current flow, “out” for a Bipolar NPN Transistor.)<br><br>
+
+ 
+The construction and terminal voltages for a bipolar NPN transistor are shown above. The voltage between the Base and Emitter ( VBE ), is positive at the Base and negative at the Emitter because for an NPN transistor, the Base terminal is always positive with respect to the Emitter. Also the Collector supply voltage is positive with respect to the Emitter ( VCE ). So for a bipolar NPN transistor to conduct the Collector is always more positive with respect to both the Base and the Emitter.
+<br><br>
+bipolar npn transistor<br><br>
+NPN Transistor Connection
+
+Then the voltage sources are connected to an NPN transistor as shown. The Collector is connected to the supply voltage VCC via the load resistor, RL which also acts to limit the maximum current flowing through the device. The Base supply voltage VB is connected to the Base resistor RB, which again is used to limit the maximum Base current.<br><br>
+
+So in a NPN Transistor it is the movement of negative current carriers (electrons) through the Base region that constitutes transistor action, since these mobile electrons provide the link between the Collector and Emitter circuits. This link between the input and output circuits is the main feature of transistor action because the transistors amplifying properties come from the consequent control which the Base exerts upon the Collector to Emitter current.<br><br>
+
+Then we can see that the transistor is a current operated device (Beta model) and that a large current ( Ic ) flows freely through the device between the collector and the emitter terminals when the transistor is switched “fully-ON”. However, this only happens when a small biasing current ( Ib ) is flowing into the base terminal of the transistor at the same time thus allowing the Base to act as a sort of current control input.<br><br>
+
+The transistor current in a bipolar NPN transistor is the ratio of these two currents ( Ic/Ib ), called the DC Current Gain of the device and is given the symbol of hfe or nowadays Beta, ( β ).<br><br>
+
+The value of β can be large up to 200 for standard transistors, and it is this large ratio between Ic and Ib that makes the bipolar NPN transistor a useful amplifying device when used in its active region as Ib provides the input and Ic provides the output. Note that Beta has no units as it is a ratio.<br><br>
+
+Also, the current gain of the transistor from the Collector terminal to the Emitter terminal, Ic/Ie, is called Alpha, ( α ), and is a function of the transistor itself (electrons diffusing across the junction). As the emitter current Ie is the sum of a very small base current plus a very large collector current, the value of alpha (α), is very close to unity, and for a typical low-power signal transistor this value ranges from about 0.950 to 0.999<br><br>
+
+α and β Relationship in a NPN Transistor<br><br>
+npn transistor alpha beta relationship
+
+ 
+By combining the two parameters α and β we can produce two mathematical expressions that gives the relationship between the different currents flowing in the transistor.<br><br>
+
+transistor alpha and beta relationship
+<br><br>
+ 
+The values of Beta vary from about 20 for high current power transistors to well over 1000 for high frequency low power type bipolar transistors. The value of Beta for most standard NPN transistors can be found in the manufactures data sheets but generally range between 50 – 200.<br><br>
+
+The equation above for Beta can also be re-arranged to make Ic as the subject, and with a zero base current ( Ib = 0 ) the resultant collector current Ic will also be zero, ( β*0 ). Also when the base current is high the corresponding collector current will also be high resulting in the base current controlling the collector current. One of the most important properties of the Bipolar Junction Transistor is that a small base current can control a much larger collector current<br><br>

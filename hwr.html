@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Login/Signup Modal Form Design</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="loginassets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="loginassets/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+	
+	
+	
+
+  </head>
+  <?php
+  session_start();
+
+	if(isset($_SESSION['username']))
+	{
+		$userName = $_SESSION['username'];	
+	}
+  require_once("login/connect.php");
+  ?>
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial;
+}
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.header {
+  overflow: hidden;
+  background-color: white;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: white;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+</style>
+<!--dropdown-->
+<style>
+.dropbtn {
+    background-color: #0099ff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	border-radius : 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: blue;
+}
+</style>
+  <body>
+  
+  
+  
+  <div class="w3-container w3-blue">
+  <center><h1>HALF WAVE RECTIFIER</h1></center>
+  </div>
+  <table align="center"><tr><td>
+ <br>
+ <div>
+<applet code=Circuit.java  archive=circuit.jar width=1000 height=550>
+Sorry, you need a Java-enabled browser to see the simulation.
+<div>
+<param name=pause value=20>
+<param name=startCircuit value="rectify.txt">
+<param name=startLabel   value="ohms">
+<param name=useFrame     value="false">
+</div>
+</div>
+</applet>
+
+
+</td><td width="20">&nbsp;</td><td valign="top">
+    
+<script type="text/javascript">
+</script>
+    </td>
+    </tr></table>
+	</tr></table><h1><u><center><b>Half Wave Rectifier</h1></u></b><br><br>
+	<h3>A simple Half Wave Rectifier is nothing more than a single pn junction diode connected in series to the load resistor. If you look at the above diagram, we are giving an alternating current as input. Input voltage is given to a step down transformer and the resulting reduced output of transformer is given to the diode ‘D’ and load resistor RL. The output voltage is measured across load resistor RL.<br><br>
+
+ The process of rectification is converting alternating current (AC) to direct current (DC).<br><br>
+ 
+ <img src=hwr.jpg height=300 width=700><br><br>
+
+Half  Wave Rectifier Operation<br><br>
+To understand the operation of a half wave rectifier perfectly, you must know the theory part really well. If you are new to the concepts of pn junction and its characteristics, I recommend you to read the half wave rectifier theory part first.<br><br>
+
+The operation of a half wave rectifier is pretty simple. From the theory part, you should know that a pn junction diode conducts current only in 1 direction. In other words, a pn junction diode conducts current only when it is forward biased. The same principle is made use of in a half wave rectifier to convert AC to DC. The input we give here is an alternating current. This input voltage is stepped down using a transformer. The reduced voltage is fed to the diode ‘D’ and load resistance RL. During the positive half cycles of the input wave, the diode ‘D’ will be forward biased and during the negative half cycles of input wave, the diode ‘D’ will be reverse biased. We take the output across load resistor RL. Since the diode passes current  only during one half cycle of the input wave, we get an output as shown in diagram. The output is positive and significant during the positive half cycles of input wave. At the same time output is zero or insignificant during negative half cycles of input wave. This is called half wave rectification.<br><br>
+	Working of a Half wave rectifier <br><br>
+
+The half-wave rectifier circuit using a semiconductor diode (D) with a load resistance RL but no smoothing filter is given in figure. The diode is connected in series with the secondary of the transformer and the load resistance RL. The primary of the transformer is being connected to the ac supply mains.<br><br>
+
+The ac voltage across the secondary winding changes polarities after every half cycle of input wave. During the positive half-cycles of the input ac voltage i.e. when upper end of the secondary winding is positive w.r.t. its lower end, the diode is forward biased and therefore conducts current. If the forward resistance of the diode is assumed to be zero (in practice, however, a small resistance exists) the input voltage during the positive half-cycles is directly applied to the load resistance RL, making its upper end positive w.r.t. its lower end. The waveforms of the output current and output voltage are of the same shape as that of the input ac voltage.
+<br><br>
+During the negative half cycles of the input ac voltage i.e. when the lower end of the secondary winding is positive w.r.t. its upper end, the diode is reverse biased and so does not conduct. Thus during the negative half cycles of the input ac voltage, the current through and voltage across the load remains zero. The reverse current, being very small in magnitude, is neglected. Thus for the negative half cycles no power is delivered to the load.<br><br>
+
+Thus the output voltage (VL) developed across load resistance RL  is a series of positive half cycles of alternating voltage, with intervening very small constant negative voltage levels, It is obvious from the figure that the output is not a steady dc, but only a pulsating dc wave. To make the output wave smooth and useful in a DC power supply, we have to use a filter across the load. Since only half-cycles of the input wave are used, it is called a half wave rectifier.  <br><br>

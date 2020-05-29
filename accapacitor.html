@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Login/Signup Modal Form Design</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="loginassets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="loginassets/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+	
+	
+	
+
+  </head>
+  <?php
+  session_start();
+
+	if(isset($_SESSION['username']))
+	{
+		$userName = $_SESSION['username'];	
+	}
+  require_once("login/connect.php");
+  ?>
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial;
+}
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.header {
+  overflow: hidden;
+  background-color: white;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: white;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+</style>
+<!--dropdown-->
+<style>
+.dropbtn {
+    background-color: #0099ff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	border-radius : 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: blue;
+}
+</style>
+  <body>
+  
+  
+  
+  <div class="w3-container w3-blue">
+  <center><h1>AC-CAPACITOR</h1></center>
+  </div>
+  <table align="center"><tr><td>
+ <br>
+ <div>
+<applet code=Circuit.java  archive=circuit.jar width=1000 height=550>
+Sorry, you need a Java-enabled browser to see the simulation.
+<div>
+<param name=pause value=20>
+<param name=startCircuit value="capac.txt">
+<param name=startLabel   value="ohms">
+<param name=useFrame     value="false">
+</div>
+</div>
+</applet>
+
+
+</td><td width="20">&nbsp;</td><td valign="top">
+    
+<script type="text/javascript">
+</script>
+    </td>
+    </tr></table>
+	 </tr></table><h1><u><center><b>AC-Capacitor</h1></u></b><br><br>
+	
+	<h3>Capacitors store energy on their conductive plates in the form of an electrical charge. When a capacitor is connected across a DC supply voltage it charges up to the value of the applied voltage at a rate determined by its time constant.
+<br><br>
+A capacitor will maintain or hold this charge indefinitely as long as the supply voltage is present. During this charging process, a charging current, i flows into the capacitor opposed by any changes to the voltage at a rate which is equal to the rate of change of the electrical charge on the plates. A capacitor therefore has an opposition to current flowing onto its plates.
+<br><br>
+The relationship between this charging current and the rate at which the capacitors supply voltage changes can be defined mathematically as: i = C(dv/dt), where C is the capacitance value of the capacitor in farads and dv/dt is the rate of change of the supply voltage with respect to time. Once it is “fully-charged” the capacitor blocks the flow of any more electrons onto its plates as they have become saturated and the capacitor now acts like a temporary storage device.
+<br><br>
+A pure capacitor will maintain this charge indefinitely on its plates even if the DC supply voltage is removed. However, in a sinusoidal voltage circuit which contains “AC Capacitance”, the capacitor will alternately charge and discharge at a rate determined by the frequency of the supply. Then capacitors in AC circuits are constantly charging and discharging respectively.
+<br><br>
+When an alternating sinusoidal voltage is applied to the plates of an AC capacitor, the capacitor is charged firstly in one direction and then in the opposite direction changing polarity at the same rate as the AC supply voltage. This instantaneous change in voltage across the capacitor is opposed by the fact that it takes a certain amount of time to deposit (or release) this charge onto the plates and is given by V = Q/C. Consider the circuit below.
+<br><br>
+AC Capacitance with a Sinusoidal Supply<br><br>
+<img src=ac1.gif height=300 width=500><br><br>
+
+ac capacitance
+
+ <br><br>
+When the switch is closed in the circuit above, a high current will start to flow into the capacitor as there is no charge on the plates at t = 0. The sinusoidal supply voltage, V is increasing in a positive direction at its maximum rate as it crosses the zero reference axis at an instant in time given as 0o. Since the rate of change of the potential difference across the plates is now at its maximum value, the flow of current into the capacitor will also be at its maximum rate as the maximum amount of electrons are moving from one plate to the other.
+<br><br>
+As the sinusoidal supply voltage reaches its 90o point on the waveform it begins to slow down and for a very brief instant in time the potential difference across the plates is neither increasing nor decreasing therefore the current decreases to zero as there is no rate of voltage change. At this 90o point the potential difference across the capacitor is at its maximum ( Vmax ), no current flows into the capacitor as the capacitor is now fully charged and its plates saturated with electrons.
+<br><br>
+At the end of this instant in time the supply voltage begins to decrease in a negative direction down towards the zero reference line at 180o. Although the supply voltage is still positive in nature the capacitor starts to discharge some of its excess electrons on its plates in an effort to maintain a constant voltage. This results in the capacitor current flowing in the opposite or negative direction.
+<br><br>
+When the supply voltage waveform crosses the zero reference axis point at instant 180o, the rate of change or slope of the sinusoidal supply voltage is at its maximum but in a negative direction, consequently the current flowing into the capacitor is also at its maximum rate at that instant. Also at this 180o point the potential difference across the plates is zero as the amount of charge is equally distributed between the two plates.
+<br><br>
+Then during this first half cycle 0o to 180o, the applied voltage reaches its maximum positive value a quarter (1/4ƒ) of a cycle after the current reaches its maximum positive value, in other words, a voltage applied to a purely capacitive circuit “LAGS” the current by a quarter of a cycle or 90o as shown below.
+<br><br>
+Sinusoidal Waveforms for AC Capacitance<br><br>
+<img src=ac2.gif height=300 width=500><br><br>
+ac capacitance waveforms
+
+ <br><br>
+During the second half cycle 180o to 360o, the supply voltage reverses direction and heads towards its negative peak value at 270o. At this point the potential difference across the plates is neither decreasing nor increasing and the current decreases to zero. The potential difference across the capacitor is at its maximum negative value, no current flows into the capacitor and it becomes fully charged the same as at its 90o point but in the opposite direction.
+<br><br>
+As the negative supply voltage begins to increase in a positive direction towards the 360o point on the zero reference line, the fully charged capacitor must now loose some of its excess electrons to maintain a constant voltage as before and starts to discharge itself until the supply voltage reaches zero at 360o at which the process of charging and discharging starts over again.
+<br><br>
+From the voltage and current waveforms and description above, we can see that the current is always leading the voltage by 1/4 of a cycle or π/2 = 90o “out-of-phase” with the potential difference across the capacitor because of this charging and discharging process. Then the phase relationship between the voltage and current in an AC capacitance circuit is the exact opposite to that of an AC Inductance we saw in the previous tutorial.
+<br><br>
+This effect can also be represented by a phasor diagram where in a purely capacitive circuit the voltage “LAGS” the current by 90o. But by using the voltage as our reference, we can also say that the current “LEADS” the voltage by one quarter of a cycle or 90o as shown in the vector diagram below.
+<br><br>
+Phasor Diagram for AC Capacitance<br><br>
+<img src=ac3.gif height=300 width=500><br><br>
+ac capacitance phasor diagram
+
+ <br><br>
+So for a pure capacitor, VC “lags” IC by 90o, or we can say that IC “leads” VC by 90o.
+<br><br>
+There are many different ways to remember the phase relationship between the voltage and current flowing in a pure AC capacitance circuit, but one very simple and easy to remember way is to use the mnemonic expression called “ICE”. ICE stands for current I first in an AC capacitance, C before Electromotive force. In other words, current before the voltage in a capacitor, I, C, E equals “ICE”, and whichever phase angle the voltage starts at, this expression always holds true for a pure AC capacitance circuit.
+	

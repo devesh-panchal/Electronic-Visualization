@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Login/Signup Modal Form Design</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="loginassets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="loginassets/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+	
+	
+	
+
+  </head>
+  <?php
+  session_start();
+
+	if(isset($_SESSION['username']))
+	{
+		$userName = $_SESSION['username'];	
+	}
+  require_once("login/connect.php");
+  ?>
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial;
+}
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.header {
+  overflow: hidden;
+  background-color: white;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: white;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+</style>
+<!--dropdown-->
+<style>
+.dropbtn {
+    background-color: #0099ff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	border-radius : 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: blue;
+}
+</style>
+  <body>
+  
+  
+  
+  <div class="w3-container w3-blue">
+  <center><h1>TRANSFORMER</h1></center>
+  </div>
+  <table align="center"><tr><td>
+ <br>
+ <div>
+<applet code=Circuit.java  archive=circuit.jar width=1000 height=550>
+Sorry, you need a Java-enabled browser to see the simulation.
+<div>
+<param name=pause value=20>
+<param name=startCircuit value="transformer.txt">
+<param name=startLabel   value="ohms">
+<param name=useFrame     value="false">
+</div>
+</div>
+</applet>
+
+
+</td><td width="20">&nbsp;</td><td valign="top">
+    
+<script type="text/javascript">
+</script>
+    </td>
+    </tr></table>
+	</tr></table><h1><u><center><b>Transformer</h1></u></b><br><br>
+	<h3>Electrical power transformer is a static device which transforms electrical energy from one circuit to another without any direct electrical connection and with the help of mutual induction between two windings. It transforms power from one circuit to another without changing its frequency but may be in different voltage level.<br><br>
+	Working Principle of Transformer
+
+The working principle of transformer is very simple. It depends upon Faraday's law of electromagnetic induction. Mutual induction between two or more winding is responsible for transformation action in an electrical transformer.<br><br>
+Faraday's Laws of Electromagnetic Induction 
+<br><br>
+
+According to these Faraday's laws,
+"Rate of change of flux linkage with respect to time is directly proportional to the induced EMF in a conductor or coil".<br><br>
+Basic Theory of Transformer<br><br>
+
+Say you have one winding which is supplied by an alternating electrical source. The alternating current through the winding produces a continually changing flux or alternating flux that surrounds the winding. If any other winding is brought nearer to the previous one, obviously some portion of this flux will link with the second. As this flux is continually changing in its amplitude and direction, there must be a change in flux linkage in the second winding or coil. According to Faraday's law of electromagnetic induction, there must be an EMF induced in the second. If the circuit of the later winding is closed, there must be a current flowing through it. This is the simplest form of an electrical power transformer, and this is the most basic of working principle of transformer.<br><br>
+<img src=trans1.png height=300 width=400><br><br>
+The winding which gives the desired output voltage due to mutual induction in the transformer is commonly known as the secondary winding of the transformer. <br><br>
+<img src=trans2.png height=300 width=400><br><br>
+transformer core winding<br><br>
+The form mentioned above of a transformer is theoretically possible but not practically, because in open air very tiny portion of the flux of the first winding will link with second; so the current that flows through the closed circuit of later, will be so small in amount that it will be difficult to measure.
+<br><br>
+The rate of change of flux linkage depends upon the amount of linked flux with the second winding. So, almost all flux of primary winding should link to the secondary winding. This is effectively and efficiently done by placing one low reluctance path common to both of the winding. This low reluctance path is core of transformer, through which the maximum number of flux produced by the primary is passed through and linked with the secondary winding. This is the most basic theory of transformer.

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Login/Signup Modal Form Design</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="loginassets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="loginassets/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+	
+	
+	
+
+  </head>
+  <?php
+  session_start();
+
+	if(isset($_SESSION['username']))
+	{
+		$userName = $_SESSION['username'];	
+	}
+  require_once("login/connect.php");
+  ?>
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial;
+}
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.header {
+  overflow: hidden;
+  background-color: white;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: white;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+</style>
+<!--dropdown-->
+<style>
+.dropbtn {
+    background-color: #0099ff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	border-radius : 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: blue;
+}
+</style>
+  <body>
+  
+  
+  
+  <div class="w3-container w3-blue">
+  <center><h1>AC-INDUCTOR</h1></center>
+  </div>
+  <table align="center"><tr><td>
+ <br>
+ <div>
+<applet code=Circuit.java  archive=circuit.jar width=1000 height=550>
+Sorry, you need a Java-enabled browser to see the simulation.
+<div>
+<param name=pause value=20>
+<param name=startCircuit value="inductac.txt">
+<param name=startLabel   value="ohms">
+<param name=useFrame     value="false">
+</div>
+</div>
+</applet>
+
+
+</td><td width="20">&nbsp;</td><td valign="top">
+    
+<script type="text/javascript">
+</script>
+    </td>
+    </tr></table>
+	</tr></table><h1><u><center><b>AC-Inductor</h1></u></b><br><br>
+	<h3>Inductors store their energy in the form of a magnetic field that is created when a voltage is applied across the terminals of an inductor. The growth of the current flowing through the inductor is not instant but is determined by the inductors own self-induced or back emf value. Then for an inductor coil, this back emf voltage VL is proportional to the rate of change of the current flowing through it.
+<br><br>
+This current will continue to rise until it reaches its maximum steady state condition which is around five time constants when this self-induced back emf has decayed to zero. At this point a steady state current is flowing through the coil, no more back emf is induced to oppose the current flow and therefore, the coil acts more like a short circuit allowing maximum current to flow through it.
+<br><br>
+However, in an alternating current circuit which contains an AC Inductance, the flow of current through an inductor behaves very differently to that of a steady state DC voltage. Now in an AC circuit, the opposition to the current flowing through the coils windings not only depends upon the inductance of the coil but also the frequency of the applied voltage waveform as it varies from its positive to negative values.
+<br><br>
+The actual opposition to the current flowing through a coil in an AC circuit is determined by the AC Resistance of the coil with this AC resistance being represented by a complex number. But to distinguish a DC resistance value from an AC resistance value, which is also known as Impedance, the term Reactance is used.
+<br><br>
+Like resistance, reactance is measured in Ohm’s but is given the symbol “X” to distinguish it from a purely resistive “R” value and as the component in question is an inductor, the reactance of an inductor is called Inductive Reactance, ( XL ) and is measured in Ohms. Its value can be found from the formula.
+<br><br>
+Inductive Reactance<br><br>
+inductive reactance
+<br><br>
+Where: XL is the Inductive Reactance in Ohms, ƒ is the frequency in Hertz and L is the inductance of the coil in Henries.
+<br><br>
+We can also define inductive reactance in radians, where Omega, ω equals 2πƒ.
+<br><br>
+ac inductance value<br><br>
+So whenever a sinusoidal voltage is applied to an inductive coil, the back emf opposes the rise and fall of the current flowing through the coil and in a purely inductive coil which has zero resistance or losses, this impedance (which can be a complex number) is equal to its inductive reactance. Also reactance is represented by a vector as it has both a magnitude and a direction (angle). Consider the circuit below.
+<br><br>
+AC Inductance with a Sinusoidal Supply<br><br>
+<img src=aci1.gif height=300 width=500><br><br>
+AC inductance
+<br><br>
+ 
+This simple circuit above consists of a pure inductance of L Henries ( H ), connected across a sinusoidal voltage given by the expression: V(t) = Vmax sin ωt. When the switch is closed this sinusoidal voltage will cause a current to flow and rise from zero to its maximum value. This rise or change in the current will induce a magnetic field within the coil which in turn will oppose or restrict this change in the current.
+<br><br>
+But before the current has had time to reach its maximum value as it would in a DC circuit, the voltage changes polarity causing the current to change direction. This change in the other direction once again being delayed by the self-induced back emf in the coil, and in a circuit containing a pure inductance only, the current is delayed by 90o.
+<br><br>
+The app<br><br>lied voltage reaches its maximum positive value a quarter ( 1/4ƒ ) of a cycle earlier than the current reaches its maximum positive value, in other words, a voltage applied to a purely inductive circuit “LEADS” the current by a quarter of a cycle or 90o as shown below.
+
+Sinusoidal Waveforms for AC Inductance<br><br>
+<img src=aci2.gif height=300 width=500><br><br>
+AC inductance waveform
+
+ 
+This effect can also be represented by a phasor diagram were in a purely inductive circuit the voltage “LEADS” the current by 90o. But by using the voltage as our reference, we can also say that the current “LAGS” the voltage by one quarter of a cycle or 90o as shown in the vector diagram below.
+<br><br>
+Phasor Diagram for AC Inductance<br><br>
+<img src=aci3.gif height=300 width=500><br><br>
+phasor diagram of ac inductance
+
+ 
+So for a pure loss less inductor, VL “leads” IL by 90o, or we can say that IL “lags” VL by 90o.
+<br><br>
+There are many different ways to remember the phase relationship between the voltage and current flowing through a pure inductor circuit, but one very simple and easy to remember way is to use the mnemonic expression “ELI” (pronounced Ellie as in the girls name). ELI stands for Electromotive force first in an AC inductance, L before the current I. In other words, voltage before the current in an inductor, E, L, I equals “ELI”, and whichever phase angle the voltage starts at, this expression always holds true for a pure inductor circuit.

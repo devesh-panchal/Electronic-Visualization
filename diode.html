@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Login/Signup Modal Form Design</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="loginassets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="loginassets/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+	
+	
+	
+
+  </head>
+  <?php
+  session_start();
+
+	if(isset($_SESSION['username']))
+	{
+		$userName = $_SESSION['username'];	
+	}
+  require_once("login/connect.php");
+  ?>
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial;
+}
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.header {
+  overflow: hidden;
+  background-color: white;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: white;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+</style>
+<!--dropdown-->
+<style>
+.dropbtn {
+    background-color: #0099ff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	border-radius : 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: blue;
+}
+</style>
+  <body>
+  
+  
+  
+  <div class="w3-container w3-blue">
+  <center><h1>DIODE</h1></center>
+  </div>
+  <table align="center"><tr><td>
+ <br>
+ <div>
+<applet code=Circuit.java  archive=circuit.jar width=1000 height=550>
+Sorry, you need a Java-enabled browser to see the simulation.
+<div>
+<param name=pause value=20>
+<param name=startCircuit value="diodevar.txt">
+<param name=startLabel   value="ohms">
+<param name=useFrame     value="false">
+</div>
+</div>
+</applet>
+
+
+</td><td width="20">&nbsp;</td><td valign="top">
+    
+<script type="text/javascript">
+</script>
+    </td>
+    </tr></table>
+	
+	<h1><u><center><b>DIODE</h1></u></b><br><br>
+<h3>A diode is a device which only allows unidirectional flow of current if operated within a rated specified voltage level.
+A diode only blocks current in the reverse direction while the reverse voltage is within a limited range otherwise reverse barrier breaks and the voltage at which this breakdown occurs is called reverse breakdown voltage. The diode acts as a valve in the electronic and electrical circuit. A P-N junction is the simplest form of the diode which behaves as ideally short circuit when it is in forward biased and behaves as ideally open circuit when it is in the reverse biased. Beside simple PN junction diodes, there are different types of diodes although the fundamental principles are more or less same. So a particular arrangement of diodes can convert AC to pulsating DC, and hence, it is sometimes also called as a rectifier.<br><br>
+The name diode is derived from "di-ode" which means a device having two electrodes.<br><br>
+Symbol of Diode
+
+The symbol of a diode is shown below, the arrowhead points in the direction of conventional current flow.<br><br>
+<img src=diode.jpg height=300 width=500><br><br>
+We can create a simple PN junction diode by doping donor impurity in one portion and acceptor impurity in other portion of silicon or germanium crystal block. These make a p n junction at the middle part of the block beside which one portion is p-type (doped with trivalent or acceptor impurity), and another portion is n-type (doped with pentavalent or donor impurity).<br><br>
+It can also be formed by joining a p-type (intrinsic semiconductor doped with a trivalent impurity) and n-type semiconductor (intrinsic semiconductor doped with a pentavalent impurity) together with a special fabrication technique such that a p-n junction is formed. Hence, it is a device with two elements, the p-type forms anode and the n-type forms the cathode. These terminals are brought out to make the external connections.
+Working Principle of Diode
+
+Unbiased Diode<br><br>
+
+N-side will have a significant number of electrons, and very few holes (due to thermal excitation) whereas the p side will have a high concentration of holes and very few electrons. Due to this, a process called diffusion takes place. In this process free electrons from n side will diffuse (spread) into the p side and recombine with holes present there, leaving positive immobile (not moveable) ions in n side and creating negative immobile ions in p side of the diode.<br><br>
+Hence, there will be uncovered positive donor ions in n-type side near the junction edge. Similarly, there will be uncovered negative acceptor ions in p-type side near the junction edge. Due to this, numbers of positive ions and negative ions will accumulate on n-side and p-side respectively. This region so formed is called as depletion region due to the “depletion” of free carriers in the region. Due to the presence of these positive and negative ions a static electric field called as barrier potential is created across the pn junction of the diode. It is called as "barrier potential" because it acts as a barrier and opposes the further migration of holes and electrons across the junction.<br><br>
+<img src=diode2.png height=300 width=500><br><br>
+Forward Biased Diode<br><br>
+
+In a PN junction diode when the forward voltage is applied i.e. positive terminal of a source is connected to the p-type side, and the negative terminal of the source is connected to the n-type side, the diode is said to be in forward biased condition. We know that there is a barrier potential across the junction. This barrier potential is directed in the opposite of the forward applied voltage. So a diode can only allow current to flow in the forward direction when forward applied voltage is more than barrier potential of the junction. This voltage is called forward biased voltage. For silicon diode, it is 0.7 volts. For germanium diode, it is 0.3 volts. When forward applied voltage is more than this forward biased voltage, there will be forward current in the diode, and the diode will become short circuited. Hence, there will be no more voltage drop across the diode beyond this forward biased voltage, and forward current is only limited by the external resistance connected in series with the diode. Thus, if forward applied voltage increases from zero, the diode will start conducting only after this voltage reaches just above the barrier potential or forward biased voltage of the junction. The time, taken by this input voltage to reach that value or in other words, the time, taken by this input voltage to overcome the forward biased voltage is called recovery time.
+<img src=diode3.png height=300 width=500><br><br>
+Reverse Biased Diode<br><br>
+
+Now if the diode is reverse biased i.e. positive terminal of the source is connected to the n-type end, and the negative terminal of the source is connected to the p-type end of the diode, there will be no current through the diode except reverse saturation current. This is because at the reverse biased condition the depilation layer of the junction becomes wider with increasing reverse biased voltage. Although there is a tiny current flowing from n-type end to p-type end in the diode due to minority carriers. This tiny current is called reverse saturation current. Minority carriers are mainly thermally generated electrons and holes in p-type semiconductor and n-type semiconductor respectively. Now if reverse applied voltage across the diode is continually increased, then after certain applied voltage the depletion layer will destroy which will cause a huge reverse current to flow through the diode. If this current is not externally limited and it reaches beyond the safe value, the diode may be permanently destroyed. This is because, as the magnitude of the reverse voltage increases, the kinetic energy of the minority charge carriers also increase. These fast moving electrons collide with the other atoms in the device to knock-off some more electrons from them. The electrons so released further release much more electrons from the atoms by breaking the covalent bonds. This process is termed as carrier multiplication and leads to a considerable increase in the flow of current through the p-n junction. The associated phenomenon is called Avalanche Breakdown.<br><br>
+<img src=diode4.png height=300 width=500><br><br>

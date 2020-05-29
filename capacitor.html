@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Login/Signup Modal Form Design</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="loginassets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="loginassets/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+	
+	
+	
+
+  </head>
+  <?php
+  session_start();
+
+	if(isset($_SESSION['username']))
+	{
+		$userName = $_SESSION['username'];	
+	}
+  require_once("login/connect.php");
+  ?>
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial;
+}
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.header {
+  overflow: hidden;
+  background-color: white;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: white;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+</style>
+<!--dropdown-->
+<style>
+.dropbtn {
+    background-color: #0099ff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	border-radius : 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: blue;
+}
+</style>
+  <body>
+  
+  
+  
+  <div class="w3-container w3-blue">
+  <center><h1>CAPACITOR</h1></center>
+  </div>
+  <table align="center"><tr><td>
+ <br>
+ <div>
+<applet code=Circuit.java  archive=circuit.jar width=1000 height=550>
+Sorry, you need a Java-enabled browser to see the simulation.
+<div>
+<param name=pause value=20>
+<param name=startCircuit value="cap.txt">
+<param name=startLabel   value="ohms">
+<param name=useFrame     value="false">
+</div>
+</div>
+</applet>
+
+
+</td><td width="20">&nbsp;</td><td valign="top">
+    
+<script type="text/javascript">
+</script>
+    </td>
+    </tr></table>
+	<h1><u><center><b>Capacitors</h1></u></b><br><br>
+	<h3>A capacitor is a two-terminal, electrical component. Along with resistors and inductors, they are one of the most fundamental passive components we use. You would have to look very hard to find a circuit which didn’t have a capacitor in it.
+<br><br>
+
+What makes capacitors special is their ability to store energy; they’re like a fully charged electric battery. Caps, as we usually refer to them, have all sorts of critical applications in circuits. Common applications include local energy storage, voltage spike suppression, and complex signal filtering.
+Circuit Symbols<br><br>
+There are two common ways to draw a capacitor in a schematic. They always have two terminals, which go on to connect to the rest of the circuit. The capacitors symbol consists of two parallel lines, which are either flat or curved; both lines should be parallel to each other, close, but not touching (this is actually representative of how the capacitor is made. Hard to describe, easier to just show:<br><br>
+
+<img src=cap.png height=300 width=700>
+
+How a Capacitor Works<br><br>
+Electric current is the flow of electric charge, which is what electrical components harness to light up, or spin, or do whatever they do. When current flows into a capacitor, the charges get “stuck” on the plates because they can’t get past the insulating dielectric. Electrons – negatively charged particles – are sucked into one of the plates, and it becomes overall negatively charged. The large mass of negative charges on one plate pushes away like charges on the other plate, making it positively charged.
+<img src=cap1.png height=300 width=700><br><br>
+Charged Cap Drawing
+
+The positive and negative charges on each of these plates attract each other, because that’s what opposite charges do. But, with the dielectric sitting between them, as much as they want to come together, the charges will forever be stuck on the plate (until they have somewhere else to go). The stationary charges on these plates create an electric field, which influence electric potential energy and voltage. When charges group together on a capacitor like this, the cap is storing electric energy just as a battery might store chemical energy.
+<br><br>
+Charging and Discharging<br><br>
+When positive and negative charges coalesce on the capacitor plates, the capacitor becomes charged. A capacitor can retain its electric field – hold its charge – because the positive and negative charges on each of the plates attract each other but never reach each other.
+<br><br>
+At some point the capacitor plates will be so full of charges that they just can’t accept any more. There are enough negative charges on one plate that they can repel any others that try to join. This is where the capacitance (farads) of a capacitor comes into play, which tells you the maximum amount of charge the cap can store.
+<br><br>
+If a path in the circuit is created, which allows the charges to find another path to each other, they’ll leave the capacitor, and it will discharge.
+<br><br>
+For example, in the circuit below, a battery can be used to induce an electric potential across the capacitor. This will cause equal but opposite charges to build up on each of the plates, until they’re so full they repel any more current from flowing. An LED placed in series with the cap could provide a path for the current, and the energy stored in the capacitor could be used to briefly illuminate the LED.
+
+capacitor charge/discharge example<br><br>
+<img src=cap2.gif height=300 width=500><br><br>
+
+Calculating Charge, Voltage, and Current<br><br>
+A capacitor’s capacitance – how many farads it has – tells you how much charge it can store. How much charge a capacitor is currently storing depends on the potential difference (voltage) between its plates. This relationship between charge, capacitance, and voltage can be modeled with this equation:
+
+Q=CV
+
+Charge (Q) stored in a capacitor is the product of its capacitance (C) and the voltage (V) applied to it.<br><br>
+<br><br>
+The capacitance of a capacitor should always be a constant, known value. So we can adjust voltage to increase or decrease the cap’s charge. More voltage means more charge, less voltage…less charge.
+<br><br>
+That equation also gives us a good way to define the value of one farad. One farad (F) is the capacity to store one unit of energy (coulombs) per every one volt.
+<br><br>
+Calculating Current<br><br>
+We can take the charge/voltage/capacitance equation a step further to find out how capacitance and voltage affect current, because current is the rate of flow of charge. The gist of a capacitor’s relationship to voltage and current is this: the amount of current through a capacitor depends on both the capacitance and how quickly the voltage is rising or falling. If the voltage across a capacitor swiftly rises, a large positive current will be induced through the capacitor. A slower rise in voltage across a capacitor equates to a smaller current through it. If the voltage across a capacitor is steady and unchanging, no current will go through it.
+<br><br>
+(This is ugly, and gets into calculus. It’s not all that necessary until you get into time-domain analysis, filter-design, and other gnarly stuff, so skip ahead to the next page if you’re not comfortable with this equation.) The equation for calculating current through a capacitor is:
+<br><br>
+i=Cdv/dt
+<br><br>
+The dV/dt part of that equation is a derivative (a fancy way of saying instantaneous rate) of voltage over time, it’s equivalent to saying “how fast is voltage going up or down at this very moment”. The big takeaway from this equation is that if voltage is steady, the derivative is zero, which means current is also zero. This is why current cannot flow through a capacitor holding a steady, DC voltage.

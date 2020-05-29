@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Login/Signup Modal Form Design</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="loginassets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="loginassets/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+	
+	
+	
+
+  </head>
+  <?php
+  session_start();
+
+	if(isset($_SESSION['username']))
+	{
+		$userName = $_SESSION['username'];	
+	}
+  require_once("login/connect.php");
+  ?>
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial;
+}
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.header {
+  overflow: hidden;
+  background-color: white;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: white;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+</style>
+<!--dropdown-->
+<style>
+.dropbtn {
+    background-color: #0099ff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	border-radius : 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: blue;
+}
+</style>
+  <body>
+  
+  
+  
+  <div class="w3-container w3-blue">
+  <center><h1>PNP TRANSISTOR</h1></center>
+  </div>
+  <table align="center"><tr><td>
+ <br>
+ <div>
+<applet code=Circuit.java  archive=circuit.jar width=1000 height=550>
+Sorry, you need a Java-enabled browser to see the simulation.
+<div>
+<param name=pause value=20>
+<param name=startCircuit value="pnp.txt">
+<param name=startLabel   value="ohms">
+<param name=useFrame     value="false">
+</div>
+</div>
+</applet>
+
+
+</td><td width="20">&nbsp;</td><td valign="top">
+    
+<script type="text/javascript">
+</script>
+    </td>
+    </tr></table>
+	</tr></table><h1><u><center><b>PNP Transistor</h1></u></b><br><br>
+	<h3>Basically, in this type of transistor construction the two diodes are reversed with respect to the NPN type giving a Positive-Negative-Positive type of configuration, with the arrow which also defines the Emitter terminal this time pointing inwards in the transistor symbol.<br><br>
+
+Also, all the polarities for a PNP transistor are reversed which means that it “sinks” current into its Base as opposed to the NPN transistor which “sources” current through its Base. The main difference between the two types of transistors is that holes are the more important carriers for PNP transistors, whereas electrons are the important carriers for NPN transistors.<br><br>
+
+Then, PNP transistors use a small base current and a negative base voltage to control a much larger emitter-collector current. In other words for a PNP transistor, the Emitter is more positive with respect to the Base and also with respect to the Collector.<br><br>
+
+The construction of a “PNP transistor” consists of two P-type semiconductor materials either side of an N-type material as shown below.<br><br>
+
+A PNP Transistor Configuration<br><br>
+<img src=pnp.gif height=300 width=500><br><br>
+
+
+(Note: Arrow defines the emitter and conventional current flow, “in” for a PNP transistor.)
+
+ 
+The construction and terminal voltages for an NPN transistor are shown above. The PNP Transistor has very similar characteristics to their NPN bipolar cousins, except that the polarities (or biasing) of the current and voltage directions are reversed for any one of the possible three configurations looked at in the first tutorial, Common Base, Common Emitter and Common Collector.<br><br>
+
+PNP Transistor Connection<br><br>
+
+The voltage between the Base and Emitter ( VBE ), is now negative at the Base and positive at the Emitter because for a PNP transistor, the Base terminal is always biased negative with respect to the Emitter.<br><br>
+
+Also the Emitter supply voltage is positive with respect to the Collector ( VCE ). So for a PNP transistor to conduct the Emitter is always more positive with respect to both the Base and the Collector.<br><br>
+
+The voltage sources are connected to a PNP transistor are as shown. This time the Emitter is connected to the supply voltage VCC with the load resistor, RL which limits the maximum current flowing through the device connected to the Collector terminal. The Base voltage VB which is biased negative with respect to the Emitter and is connected to the Base resistor RB, which again is used to limit the maximum Base current.<br><br>
+
+To cause the Base current to flow in a PNP transistor the Base needs to be more negative than the Emitter (current must leave the base) by approx 0.7 volts for a silicon device or 0.3 volts for a germanium device with the formulas used to calculate the Base resistor, Base current or Collector current are the same as those used for an equivalent NPN transistor and is given as.<br><br>
+<img src=pnp1.gif height=300 width=500><br><br>
+
+pnp transistor base current<br><br>
+
+ 
+We can see that the fundamental differences between a NPN Transistor and a PNP Transistor is the proper biasing of the transistors junctions as the current directions and voltage polarities are always opposite to each other. So for the circuit above: Ic = Ie – Ib as current must leave the Base.<br><br>
+
+Generally, the PNP transistor can replace NPN transistors in most electronic circuits, the only difference is the polarities of the voltages, and the directions of the current flow. PNP transistors can also be used as switching devices and an example of a PNP transistor switch is shown below.<br><br>
+
+A PNP Transistor Circuit<br><br>
+<img src=pnp2.gif height=300 width=500><br><br>
+
+
+ 
+The Output Characteristics Curves for a PNP transistor look very similar to those for an equivalent NPN transistor except that they are rotated by 180o to take account of the reverse polarity voltages and currents, (that is for a PNP transistor, electron current flows out of the base and collector towards the battery). The same dynamic load line can be drawn onto the I-V curves to find the PNP transistors operating points.
